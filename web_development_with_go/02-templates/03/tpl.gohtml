@@ -1,0 +1,25 @@
+<html>
+<body>
+  <h1>Menu</h1>
+  <h2>Breakfast</h2>
+  <ul>
+  {{range .Breakfast}}
+    <li>{{.Name}}   {{.Price}}</li>
+  {{end}}
+  </ul>
+
+  <h2>Lunch</h2>
+  <ul>
+  {{range .Lunch}}
+    <li>{{.Name}}   {{.Price}}</li>
+  {{end}}
+  </ul>
+
+  <h2>Dinner</h2>
+  <ul>
+  {{range .Dinner}}
+    <li>{{.Name}}   {{.Price}}</li>
+  {{end}}
+  </ul>
+</body>
+</html>
