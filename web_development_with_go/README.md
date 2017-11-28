@@ -13,3 +13,4 @@ Instructor: Todd McLeod
 - [x] [Templates](02-templates)
 - [x] [Creating your own server](03-creating_your_own_server)
 - [x] [Understanding routing](05-understanding_routing)
+- [x] [Serving files](06-serving_files)
