@@ -8,6 +8,7 @@ import (
 	"strconv"
 )
 
+// http://adventofcode.com/2017/day/1
 func main() {
 	bytes, err := ioutil.ReadAll(os.Stdin)
 	if err != nil {
