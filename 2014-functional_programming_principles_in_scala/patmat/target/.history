@@ -1,0 +1,77 @@
+ls
+test
+exit
+test
+console
+test
+List('a')
+List[Char]('a')
+List
+List[Char]
+test
+List('a', 'b')
+val l = List('a', 'b')
+val l = List(('a', 'b'))
+import common._
+console
+test
+val chars = List('a', 'b', 'a')
+import common._
+console
+test
+import common._
+test
+exit
+test
+console
+test
+val l = List(1, 2, 3, 4)
+console
+test
+console
+test
+:q
+q
+quit
+test
+scala
+console
+test
+console
+test
+console
+test
+console
+test
+console
+test
+console
+test
+console
+test
+console
+test
+scala
+:q
+quit
+test
+:q
+exit
+test
+console
+test
+exit
+test
+console
+test
+console
+tes
+test
+console
+test
+submit
+submit desimic@gmail.com mhhbQMgAM8
+sbt
+test
+submit desimic@gmail.com mhhbQMgAM8
+exit
