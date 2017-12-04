@@ -4,3 +4,5 @@
 
 - [x] [Day 1](day01)
 - [x] [Day 2](day02)
+- [ ]  Day 3
+- [x] [Day 4](day04)
