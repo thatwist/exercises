@@ -6,3 +6,4 @@
 - [x] [Day 2](day02)
 - [ ]  Day 3
 - [x] [Day 4](day04)
+- [x] [Day 5](day05)
