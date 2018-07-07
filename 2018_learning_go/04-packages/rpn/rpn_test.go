@@ -2,23 +2,23 @@ package rpn
 
 import "testing"
 
-func TestEmpty(t *testing.T) {
-  if Eval("") != 0 {
-    t.Log("Empty expression should be evaluted to 0")
-    t.Fail()
+func TestEval(t *testing.T) {
+  examples := []struct{
+    in string
+    out int
+  }{
+    {in: "", out: 0},
+    {in: "2 3 +", out: 5},
+    {in: "7 2 3 + *", out: 35},
+    {in: "7 2 3 + * 2 * 7 / 3 -", out: 7},
+  }
+
+  for _, example := range examples {
+    r := Eval(example.in)
+    if r != example.out {
+      t.Logf("'%s' should evaluate to %d, but was %d", example.in, example.out, r)
+      t.Fail()
+    }
   }
 }
 
-func TestEvalSum(t *testing.T) {
-  if Eval("2 3 +") != 5 {
-    t.Log("2 3 + should be evaluted to 5")
-    t.Fail()
-  }
-}
-
-func TestEvalSumMultiply(t *testing.T) {
-  if Eval("7 2 3 + *") != 35 {
-    t.Log("7 2 3 + should be evaluted to 35")
-    t.Fail()
-  }
-}

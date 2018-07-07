@@ -15,22 +15,22 @@ func Eval(str string) int {
     case "+":
       o1, _ := strconv.Atoi(stack.Pop())
       o2, _ := strconv.Atoi(stack.Pop())
-      r := o1 + o2
+      r := o2 + o1
       stack.Push(strconv.Itoa(r))
     case "-":
       o1, _ := strconv.Atoi(stack.Pop())
       o2, _ := strconv.Atoi(stack.Pop())
-      r := o1 - o2
+      r := o2 - o1
       stack.Push(strconv.Itoa(r))
     case "*":
       o1, _ := strconv.Atoi(stack.Pop())
       o2, _ := strconv.Atoi(stack.Pop())
-      r := o1 * o2
+      r := o2 * o1
       stack.Push(strconv.Itoa(r))
     case "/":
       o1, _ := strconv.Atoi(stack.Pop())
       o2, _ := strconv.Atoi(stack.Pop())
-      r := o1 / o2
+      r := o2 / o1
       stack.Push(strconv.Itoa(r))
     default:
       stack.Push(token)
