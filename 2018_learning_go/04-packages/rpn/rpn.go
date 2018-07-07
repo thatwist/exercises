@@ -13,29 +13,27 @@ func Eval(str string) int {
   for _, token := range tokens {
     switch token {
     case "+":
-      o1, _ := strconv.Atoi(stack.Pop())
-      o2, _ := strconv.Atoi(stack.Pop())
-      r := o2 + o1
-      stack.Push(strconv.Itoa(r))
+      o1, o2 := pop2(stack)
+      stack.Push(strconv.Itoa(o2 + o1))
     case "-":
-      o1, _ := strconv.Atoi(stack.Pop())
-      o2, _ := strconv.Atoi(stack.Pop())
-      r := o2 - o1
-      stack.Push(strconv.Itoa(r))
+      o1, o2 := pop2(stack)
+      stack.Push(strconv.Itoa(o2 - o1))
     case "*":
-      o1, _ := strconv.Atoi(stack.Pop())
-      o2, _ := strconv.Atoi(stack.Pop())
-      r := o2 * o1
-      stack.Push(strconv.Itoa(r))
+      o1, o2 := pop2(stack)
+      stack.Push(strconv.Itoa(o2 * o1))
     case "/":
-      o1, _ := strconv.Atoi(stack.Pop())
-      o2, _ := strconv.Atoi(stack.Pop())
-      r := o2 / o1
-      stack.Push(strconv.Itoa(r))
+      o1, o2 := pop2(stack)
+      stack.Push(strconv.Itoa(o2 / o1))
     default:
       stack.Push(token)
     }
   }
   result, _ := strconv.Atoi(stack.Pop())
   return result
+}
+
+func pop2(stack *data.Stack) (i1 int, i2 int) {
+  i1, _ = strconv.Atoi(stack.Pop())
+  i2, _ = strconv.Atoi(stack.Pop())
+  return
 }
